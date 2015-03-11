@@ -12,8 +12,16 @@ Drilldown(subject, path[, default])
 ## Example usage:
 
 ```
-var noop = function() {};
+var user = { address: { street: "Regent Street" } };
 
 var postcode = Drilldown(user, "address.postcode", "TE57 1NG");
-var pluginResponse = Drilldown(window, "plugins.FooPlugin.bar", noop)();
+// returns 'TE57 1NG'
+var street = Drilldown(user, "address.street", "Test Street");
+// returns 'Regent Street'
+
+// or for calling plugins that may not be present:
+var noop = function() {};
+var plugins = {};
+var pluginResponse = Drilldown(plugins, "FooPlugin.barAction", noop)();
+// returns undefined, and does not crash
 ```
