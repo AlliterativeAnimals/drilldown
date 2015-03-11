@@ -1,0 +1,17 @@
+{
+  "name": "drilldown-angular",
+  "version": "0.0.2",
+  "homepage": "https://github.com/AlliterativeAnimals/drilldown",
+  "authors": [
+    "ReactiveRaven <reactiveraven@gmail.com>"
+  ],
+  "description": "angular module to drill down through convoluted structures",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
